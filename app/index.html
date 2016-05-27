@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html ng-app="paymania">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>payMania</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- CSS files -->
+    <link rel="stylesheet" href="css/master.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <!-- TODO: Remove gulp partials, as angular supports partials in default -->
+    <header ng-show="header">
+        @@include('./partials/_header.html')
+    </header>
+    <nav>@@include('./partials/_sideMenu.html')</nav>
+    <!-- Section -->
+    <section>
+        <ng-view></ng-view>
+    </section>
+    <footer ng-show="footer">
+        @@include('./partials/_footer.html')
+    </footer>
+    @@include('./partials/_overlay.html')
+    <!-- JS files -->
+    <script src="js/bower.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/application.js" type="text/javascript" charset="utf-8"></script>
+    <!-- endbuild -->
+</body>
+</html>

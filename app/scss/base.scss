@@ -1,0 +1,22 @@
+/*-------------------------------------------------
+SMACSS: BASE
+-------------------------------------------------*/
+body {
+    background: white;
+    color: #ced9e0;
+    font-family: sans-serif;
+  	box-sizing: border-box;
+  	-webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color:transparent;
+}
+
+a {
+    color: $color-gray;
+}
+a:hover {
+    color: #ced9e0;
+}
+.fa{
+	font-family: 'FontAwesome';
+}

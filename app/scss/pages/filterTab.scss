@@ -1,0 +1,57 @@
+.filter-tab-container{
+	padding-top: 60px;
+	position: fixed;
+	height: 36px;
+	background-color: $color-filter-tab;
+	width: 100vw;
+	overflow-x: auto;
+	text-transform: uppercase;
+	-webkit-overflow-scrolling: touch;
+	z-index: 8;
+    .filters{
+    	width: 150%;
+    	max-width: 780px;
+    }
+	.filter-tab{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px 21px;
+    font-size: 11px;
+    font-weight: bold;
+    cursor: pointer;
+
+	}
+	.active-bar-container{
+		height: 5px;
+		width: 100%;
+	}
+	.active-bar{
+	    width: 65px;
+	    background-color: white;
+	    position: relative;
+	    height: 100%;
+	    left:0;
+	    transition:all .1s ease; 
+	}
+}
+.wheel-menu-action{
+	position: fixed;
+	width:55px;
+	height: 55px;
+	border-radius: 50%;
+	background-color: $color-titlebar;
+	bottom: 15px;
+	right:15px;
+	z-index: 8;
+	opacity: 0;
+	display: table;
+
+	.wheel-menu-icon{
+		display: table-cell;
+		vertical-align: middle;
+		text-align: center;
+		font-size: 21px;
+	}
+}

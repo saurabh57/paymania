@@ -1,0 +1,21 @@
+.atoms-container{
+    padding: 100px 10px 10px;
+    position: relative;
+    overflow: auto;
+    background: $color-core-background;
+    -webkit-overflow-scrolling: touch;
+    box-sizing: border-box;
+    text-align: center;
+	
+}
+	
+	.atom{
+	    height: 130px;
+	    width: 100%;
+	    max-width: 300px;
+	    margin: auto;
+	    margin-top: 5px;
+	    display: inline-block;
+	    box-shadow: 2px 3px 3px #BBB9B9;
+	    background: white;
+	}

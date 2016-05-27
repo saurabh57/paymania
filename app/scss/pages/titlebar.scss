@@ -1,0 +1,43 @@
+.titlebar-container{
+	position: fixed;
+	height:60px;
+	background:$color-titlebar;	
+	display: table;
+	width:100%;
+	z-index:10;
+
+	.back{
+		display:table-cell;
+		vertical-align: middle;
+	    text-align: center;
+	    font-size: 21px;
+	    cursor: pointer;
+	    width: 40px;
+	}
+
+	.back.disable{
+		display:none;
+	}
+	.title-name{
+		display:table-cell;
+		vertical-align: middle;
+	    font-weight: bold;
+	    font-size: 18px;
+	}
+	.title-name.left{
+		text-align: left;
+	}
+	.hamburger{
+		display: table-cell;
+		vertical-align: middle;
+	    text-align: center;
+	    font-size: 21px;
+	    cursor: pointer;
+		width: 40px;
+
+	}
+
+	.hamburger.disable{
+		display:none;
+	}
+}

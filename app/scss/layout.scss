@@ -1,0 +1,46 @@
+/*-------------------------------------------------
+SMACSS: LAYOUT - COMMON
+-------------------------------------------------*/
+header,
+section,
+footer {
+
+}
+
+/*-------------------------------------------------
+SMACSS: LAYOUT - HEADER
+-------------------------------------------------*/
+header {
+    padding: 10px;
+    color: white;
+    margin: 0;
+    background: $color-titlebar;
+    .title {
+      font-size: 21px; // em to px convertor
+      font-weight: bold;
+    }
+
+    .caption {
+      padding-top: 10px;
+      font-size: 12px;
+    }
+}
+
+/*-------------------------------------------------
+SMACSS: LAYOUT - SECTION
+-------------------------------------------------*/
+section {
+  color: $color-white;
+  font-size: 1em;
+  font-weight: normal;
+}
+
+/*-------------------------------------------------
+SMACSS: LAYOUT - FOOTER
+-------------------------------------------------*/
+footer {
+  color: $color-gray;
+  font-size: 11px;
+  text-align: center;
+  padding: 10px;
+}

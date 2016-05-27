@@ -1,0 +1,23 @@
+.atom-form-container{
+    padding: 70px 10px 10px;
+    position: relative;
+    overflow: auto;
+    background: $color-core-background;
+    -webkit-overflow-scrolling: touch;
+    height: 100vh;
+    box-sizing: border-box;
+    color: gray;
+    
+    .detail-fields-wrapper{
+    	margin: 20px 10px;
+    }
+
+    label{
+    	font-size: 14px;
+	    line-height: 25px;
+	    text-transform: uppercase;
+    }
+    .detail-field button{
+    	margin-top: 10px;
+    }
+}

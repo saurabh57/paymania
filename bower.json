@@ -1,0 +1,15 @@
+{
+  "name": "payMania",
+  "version": "0.0.1",
+  "dependencies": {
+    "angular": "1.2.6",
+    "angular-route": "1.2.6",
+    "jquery": "*"
+  },
+  "devDependencies": {
+
+  },
+  "overrides": {
+
+  }
+}

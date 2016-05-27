@@ -1,0 +1,5 @@
+<div class="titlebar-container" ng-controller="titlebarController">
+	<div class="hamburger fa fa-bars" ng-click="openSideMenu()" ng-class="hamburgerDisable?'disable':''"></div>
+	<div class="back fa fa-angle-left" ng-class="backDisable?'disable':''" ng-click="back()"></div>
+	<div class="title-name" ng-class="titleLeft?'left':''">{{title}}</div>
+</div>
