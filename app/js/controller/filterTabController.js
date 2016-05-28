@@ -1,7 +1,9 @@
 /****Filter tab controller***/
 'use strict';
 app.controller('filterTabController',['$rootScope','$scope','$location','$document',function($rootScope,$scope,$location,$document){
-		
+	//Adding model to scope
+	$scope.filters = filter_model.filters;
+
 	$scope.filterTabHandler = function($event){
 		window.document.getElementsByClassName('active-bar')[0].style.transform = 'translateX('+$event.target.offsetLeft+'px)';
 		window.document.getElementsByClassName('active-bar')[0].style.webkitTransform = 'translateX('+$event.target.offsetLeft+'px)';

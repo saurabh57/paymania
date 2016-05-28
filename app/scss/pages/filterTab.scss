@@ -47,6 +47,8 @@
 	z-index: 8;
 	opacity: 0;
 	display: table;
+	transition: all .4s ease;
+    box-shadow: 0px 2px 5px gray;
 
 	.wheel-menu-icon{
 		display: table-cell;
