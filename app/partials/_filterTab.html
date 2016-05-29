@@ -1,6 +1,6 @@
 <div class="filter-tab-container" ng-controller="filterTabController">
 	<div class="filters" ng-click="filterTabHandler($event)">
-		<div class="filter-tab" ng-repeat="filter in filters">{{filter.name}}</div>
+		<div class="filter-tab" ng-repeat="filter in filters" data-attr="{{filter.attr}}">{{filter.name}}</div>
 	</div>
 	<div class="active-bar-container">
 		<div class="active-bar"></div>

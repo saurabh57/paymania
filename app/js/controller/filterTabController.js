@@ -13,7 +13,25 @@ app.controller('filterTabController',['$rootScope','$scope','$location','$docume
 		this.filterAction($event);
 	};
 	$scope.filterAction = function($event){
-		
+		var dataAttr = $rootScope.getDataAttr($event);
+		console.log(dataAttr);
+
+		_.mixin({
+          'nestedWhere': function(parent, childTarget, searchOptions) {
+            
+            // reduce the parent with an intial state set to an empty array that we push a parent
+            // to if a child where clause is matched
+            return _.reduce(parent, function(memo, parentElement) {
+              if (parentElement[childTarget] && parentElement[childTarget].indexOf(searchOptions.category)!=-1){
+                memo.push(parentElement);
+                return memo;
+              }
+              return memo;
+            }, []);
+          }
+        });
+
+		$rootScope.atoms = _.nestedWhere(dashboard_model.atoms,'category',{'category':dataAttr});
 	}
 
 	//bind scroll event 

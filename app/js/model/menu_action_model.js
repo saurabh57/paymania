@@ -45,4 +45,4 @@ var menu_action_model = {
 					'attr':'signOut'
 				}
 			]
-}
+};
