@@ -17,7 +17,11 @@
 	    line-height: 25px;
 	    text-transform: uppercase;
     }
-    .detail-field button{
-    	margin-top: 10px;
+    .detail-field{
+        max-width: 370px;
+
+        button{
+        	margin-top: 10px;
+        }
     }
 }

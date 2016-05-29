@@ -21,6 +21,18 @@ var dashboard_model = {
 					'category':['all','shopping']
 				},
 				{
+					'name':'Food Panda',
+					'des':'',
+					'imgSrc':'../images/kk.png',
+					'category':['all','food']
+				},
+				{
+					'name':'Swiggy',
+					'des':'',
+					'imgSrc':'../images/kk.png',
+					'category':['all','food']
+				},
+				{
 					'name':'Ekart',
 					'des':'',
 					'imgSrc':'../images/kk.png',

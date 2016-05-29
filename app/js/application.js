@@ -25,11 +25,15 @@ app.config(['$routeProvider', function($routeProvider) {
 app.run(['$rootScope','$location', function($rootScope, $location) {
      $rootScope.sideMenuActive = false;
      $rootScope.hideOverlay = true;
+     $rootScope.hideLoader = true;
+    
     $rootScope.overlayHandler = function($event){
         $rootScope.sideMenuActive = false;
         $rootScope.hideOverlay = true;
     };
+    $rootScope.loaderHandler = function($event){
 
+    };
     $rootScope.getDataAttr = function($event){
         var currentTarget = $($event.target).closest('[data-attr]'),
             currentAction;
