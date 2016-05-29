@@ -30,4 +30,14 @@ app.run(['$rootScope','$location', function($rootScope, $location) {
         $rootScope.hideOverlay = true;
     };
 
+    $rootScope.getDataAttr = function($event){
+        var currentTarget = $($event.target).closest('[data-attr]'),
+            currentAction;
+
+            currentTarget = currentTarget.length ? currentTarget : $($event.target).find('[data-attr]');
+            currentAction = currentTarget.attr('data-attr');
+        
+        return currentAction;
+    }
+
 }]);

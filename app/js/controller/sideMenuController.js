@@ -5,12 +5,7 @@ app.controller('sideMenuController',['$rootScope','$scope','$location',function(
 
 
 	$scope.actionHandler = function($event){
-		var currentTarget = $($event.target).closest('[data-attr]'),
-			currentAction;
-			
-
-			currentTarget = currentTarget.length ? currentTarget : $($event.target).find('[data-attr]');
-			currentAction = currentTarget.attr('data-attr');
+		var currentAction = $rootScope.getDataAttr($event);
 		
 		console.log(currentAction);
 	}

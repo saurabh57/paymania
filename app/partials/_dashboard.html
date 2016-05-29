@@ -1,12 +1,7 @@
 @@include('_titlebar.html')
 @@include('_filterTab.html')
 <div class="atoms-container">
-	<div class="atom" ng-click="addDetails()"></div>
-	<div class="atom"></div>
-	<div class="atom"></div>
-	<div class="atom"></div>
-	<div class="atom"></div>
-	<div class="atom"></div>
-	<div class="atom"></div>
-	<div class="atom"></div>
+	<div class="atom" ng-repeat="atom in atoms" ng-click="addDetails(atom)" style="background-image:url({{atom.imgSrc}});">
+		<div class="atom-content">{{atom.name}}</div>
+	</div>
 </div>

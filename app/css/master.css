@@ -2177,9 +2177,22 @@ button:hover {
   max-width: 300px;
   margin: auto;
   margin-top: 5px;
+  margin-right: 5px;
   display: inline-block;
   box-shadow: 2px 3px 3px #BBB9B9;
-  background: white; }
+  background: white;
+  color: grey;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: 50%; }
+  .atom img {
+    width: 100%; }
+  .atom .atom-content {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: blue; }
 
 .atom-form-container {
   padding: 70px 10px 10px;

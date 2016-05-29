@@ -4,19 +4,23 @@ var filter_model = {
 	'filters':[
 				{
 					'name':'All',
-					'des':''
+					'des':'',
+					'attr':'all'
 				},
 				{
 					'name':'Food',
-					'des':''
+					'des':'',
+					'attr':'food'
 				},
 				{
 					'name':'Shopping',
-					'des':''
+					'des':'',
+					'attr':'shopping'
 				},
 				{
 					'name':'Bill Payments',
-					'des':''
+					'des':'',
+					'attr':'billPayment'
 				}
 			]
 }
