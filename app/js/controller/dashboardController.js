@@ -7,10 +7,17 @@ app.controller('dashboardController',['$rootScope','$scope','$location',function
 	$rootScope.hamburgerDisable = false;
 	$rootScope.titleLeft = false;
 	$rootScope.title = 'Pay Mania';
+	$scope.selectedFilter = 'All';
 
+	$rootScope.atoms = dashboard_model.atoms;
 
-	$scope.addDetails = function(){
+	$scope.filterAtoms = function(filter){
 
+		$scope.atoms = dashboard_model.atoms;
+	};
+	
+	$scope.addDetails = function(atom){
+		$rootScope.selectedAtom = atom;
 
 		$location.path('/atom');
 	}

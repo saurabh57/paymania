@@ -1,9 +1,6 @@
 <div class="filter-tab-container" ng-controller="filterTabController">
 	<div class="filters" ng-click="filterTabHandler($event)">
-		<div class="filter-tab">All</div>
-		<div class="filter-tab">Food</div>
-		<div class="filter-tab">Shopping</div>
-		<div class="filter-tab">Bill Payments</div>
+		<div class="filter-tab" ng-repeat="filter in filters" data-attr="{{filter.attr}}">{{filter.name}}</div>
 	</div>
 	<div class="active-bar-container">
 		<div class="active-bar"></div>

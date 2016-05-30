@@ -9,13 +9,8 @@
 		</div>
 	</div>
 	<div class="menu-wrapper">
-		<ul>
-			<li><i class="fa fa-home"></i><span class="menu-action home">Home</span></li>
-			<li><i class="fa fa-credit-card"></i><span class="menu-action home">Wallet</span></li>
-			<li><i class="fa fa-user"></i><span class="menu-action home">Profile</span></li>
-			<li><i class="fa fa-history"></i><span class="menu-action home">Transaction History</span></li>
-			<li><i class="fa fa-question-circle"></i><span class="menu-action home">Help</span></li>
-			<li><i class="fa fa-sign-out"></i><span class="menu-action home">Sign out</span></li>
+		<ul ng-click="actionHandler($event)">
+			<li ng-repeat="action in actions"><i class="fa fa-{{action.icon}}"></i><span class="menu-action" data-attr="{{action.attr}}">{{action.action}}</span></li>
 		</ul>
 	</div>
 </div>
